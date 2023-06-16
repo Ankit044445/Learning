@@ -1,0 +1,86 @@
+
+
+.main{
+
+
+width:500px;
+height: 500px;
+border: 2px gray solid;
+
+
+
+box-sizing: border-box;
+margin: auto;
+box-shadow: 5px  5px  5px 3px gray;
+background-color: rgb(56, 54, 54);
+position: relative;;
+
+
+
+
+}
+.first{
+
+    height: 28px;
+    background-color: beige;
+    border: 1px solid black;
+    position: absolute;
+    bottom: 323px;
+    left: 14px;
+
+}
+.second{
+
+    height: 28px;
+    background-color: beige;
+    border: 1px solid black;
+    display: inline-block;
+    position: absolute;
+    bottom: 323px;
+    left: 323px;
+
+
+
+     
+}
+.calci{
+    background-color: blueviolet;
+    color: white;
+    position: absolute;
+    bottom: 323px;
+    left: 227px;
+    height: 30px;
+    width: 45px;
+}
+.btn{
+    background-color: rgb(39, 179, 14);
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    height: 40px;
+    width: 60px;
+    border-radius: 50px;
+    margin-left: 8px;
+    position: absolute;
+    left: 0px;
+    bottom: 218px;
+  
+  }
+  .result{
+    height: 28px;
+    background-color: #9f8db1;
+    border: 1px solid black;
+    display: inline-block;
+    position: absolute;
+    bottom: 230px;
+    left: 323px;
+    color: aliceblue;
+
+
+  }
+  .ok{
+    color: aliceblue;
+    position: absolute;
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    left: 90px;
+  }

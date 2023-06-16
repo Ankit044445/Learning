@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date methods </title>
+</head>
+
+<script type="text/javascript">
+
+var date  =new Date();
+
+function full(){
+var x = document.write(date);
+
+}
+function Year(){
+var x = document.write(date.getUTCFullYear())
+
+}
+function minutes(){
+var x = document.write(date.getMinutes())
+
+}
+function day(){
+var x = document.write(date.getDay())
+
+}
+
+
+
+
+
+</script>
+<body>
+    <h1 id="res"></h1>
+    <button onclick="full()">full</button>
+    <button onclick="Year()">year</button>
+    <button onclick="minutes()">minutes</button>
+    <button onclick="day()">day</button>
+
+
+
+
+
+
+    
+</body>
+</html>

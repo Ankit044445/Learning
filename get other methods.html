@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>get methods</title>
+</head>
+<body>
+    <input type="text" name="one">
+    <h2></h2>
+    <button onclick="submit()">Click</button>
+    <button onclick="back()">Back</button>
+
+    <script type="text/javascript">
+        function submit() {
+            var x = document.getElementsByName("one")[0].value;
+            document.getElementsByName("one")[0].value = "";
+            document.getElementsByTagName("h2")[0].innerHTML = x;
+        }
+
+        function back() {
+            document.getElementsByName("one")[0].value = "";
+            document.getElementsByTagName("h2")[0].innerText = "";
+        }
+    </script>
+</body>
+</html>
