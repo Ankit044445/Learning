@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print</title>
+</head>
+
+<body id="main">
+    <img src="/style.css/admin.png" >
+    <p id="able">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, et optio. Et libero molestiae nobis
+        praesentium sunt ut corporis eum officia dolore non totam dignissimos eaque exercitationem quaerat, eos sed a.
+        Velit aliquid debitis veniam nihil odit quisquam, culpa reprehenderit facilis, veritatis aliquam qui, pariatur
+        fuga quod iusto minima! Quibusdam ipsum, modi rerum consequatur excepturi earum perspiciatis repellat delectus
+        laboriosam ut, fugiat tenetur debitis fuga ex tempore sint ab? Sed labore facilis aspernatur modi voluptatibus!
+        Aliquid non numquam asperiores dignissimos perspiciatis repellendus commodi eveniet hic quis adipisci eaque,
+        fuga ducimus tenetur tempore a blanditiis! Architecto nesciunt maiores voluptates aperiam soluta. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Tempora nobis officiis aliquid asperiores odit amet totam
+        laudantium architecto, debitis repellendus.id debitis veniam nihil odit quisquam, culpa reprehenderit facilis, veritatis aliquam qui, pariatur
+        fuga quod iusto minima! Quibusdam ipsum, modi rerum consequatur excepturi earum perspiciatis repellat delectus
+       .</p>
+        <br>
+        <button onclick="printPage()"> print</button>
+
+</body>
+<script type="text/javascript">
+
+
+function printPage (){
+     var para =document.getElementById('able').innerHTML;
+     var body= document.getElementById('main').innerHTML;
+      document.getElementById('main').innerHTML=para;
+      window.print();
+      document.getElementById('main') .innerHTML=body;
+
+}
+
+
+
+</script>
+
+</html>

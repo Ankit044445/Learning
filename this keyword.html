@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This Keywords</title>
+</head>
+<script type="text/javascript">
+
+
+// var c ={
+// firstname:"Ankit",
+// lastname:"Mishra",
+// fullname:function(){
+
+
+//     return     this.firstname+this.lastname;
+// }
+
+
+// }
+// document.write(c.fullname())
+const  u={
+
+myname:"Ankit",
+
+cars:[ "tata" , "hyundai"],
+
+info(){
+    this.cars.forEach(function (tag){
+alert(this.myname +  tag)
+
+    },this)
+
+
+}
+
+
+
+
+}
+u.info();
+
+// var t ={
+
+//     name:'octa',
+//     surname:'tech',
+   
+// info(){
+
+// alert(this.name + this.surname);
+
+// }
+
+
+
+
+// }
+// t.info();
+
+
+
+
+
+
+
+function remove(any){
+
+    any.style.display="none";
+
+
+}
+
+</script>
+<body>
+    
+<!-- // hiding button using javascript 
+    -->
+
+<button onclick=remove(this)>hide ths btn</button>
+<!-- to change backgound color  -->
+<button onclick="this.style.background ='blue'">change color</button>
+
+
+</body>
+</html>

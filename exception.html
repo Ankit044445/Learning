@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception </title>
+</head>
+<script type="text/javascript">
+    
+
+function res(){
+
+    try{
+
+        alertf("hi")
+    }
+    catch(err){
+        document.getElementById('main').innerHTML=err
+
+
+    }
+}
+
+</script>
+<body>
+    <p id="main"></p>
+    <button onclick="res()">click</button>
+    
+</body>
+</html>
