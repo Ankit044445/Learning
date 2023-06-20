@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caps detection</title>
+</head>
+<script type="text/javascript">
+
+window.addEventListener('keyup', event=>{
+    document.getElementById('last').style.color='red'
+         
+isCap = event.getModifierState('CapsLock')
+if (isCap){
+    document.getElementById('last').innerHTML = "Caps is on";
+            flag = 0;
+
+
+}
+else{
+    document.getElementById('last').innerHTML = "";
+
+}
+
+})
+
+
+    var flag = 1;
+
+    function toggle(elem) {
+        var one = document.getElementById('password');
+
+        if (elem.value.length > 0) {
+            if (elem.value !== one.value) {
+                document.getElementById('last').innerHTML = "Passwords do not match";
+                flag = 0;
+            } else {
+                document.getElementById('last').innerHTML = "";
+                flag = 1;
+            }
+        } else {
+            document.getElementById('last').innerHTML = "Please enter password";
+            flag = 0;
+        }
+    }
+
+    function validate() {
+        if (flag === 1) {
+            return true;
+        } else {
+            alert("Sorry, password does not match!");
+            return false;
+        }
+    }
+
+    function show(elem) {
+        var passwordInput = document.getElementById('password');
+        var passwordType = passwordInput.getAttribute('type');
+
+        if (passwordType === 'password') {
+            passwordInput.setAttribute('type', 'text');
+            elem.innerHTML = "Hide Password";
+            flag = 0;
+        } else {
+            passwordInput.setAttribute('type', 'password');
+            elem.innerHTML = "Show Password";
+            flag = 1;
+        }
+    }
+</script>
+<body>
+    <form onsubmit="return validate()">
+        Name: <input type="text"><br><br>
+        Password: <input type="password" id="password"><br><br>
+        Confirm Password: <input type="password" onkeyup="toggle(this)"><br><br>
+        <h2 id="last"></h2>
+        <input id="submit" type="submit" value="SUBMIT">
+        <button id="jod" onclick="show(this); event.preventDefault();">Show Password</button>
+    </form>
+</body>
+</html>
