@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest operator </title>
+</head>
+<script>
+
+function test(name,...ok){
+let sum=0;
+for(var h in ok){
+
+    sum+=ok[h];
+}
+document.write(`hello ${name}` + "|"+sum + "<br>")
+
+
+  
+
+
+
+}
+test( "octa",20,50,60);
+test( "zocta",60,50)
+
+
+
+// normal additions using arguments
+
+// function test(){
+//     let test=0;
+
+// for(var h in arguments){
+
+
+
+
+
+// test+=arguments[h];
+
+
+
+    
+// }
+// document.write(test)
+
+
+  
+
+
+
+// }
+// test(20,50,60);
+// test( 60,50)
+
+
+
+// function details (name, age , ...country){
+
+// for(var t in country){
+
+//     document.write(name,age,country[t]+ "<br>")
+
+
+
+// }
+
+
+
+// }
+// details("octa", 22,"india")
+// details("zocta", 28,"canda")
+// details("locta", 29,"australia")
+
+</script>
+<body>
+    
+</body>
+</html>
