@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+
+
+<script>
+
+// let complete= true;
+// let full = new Promise(function(resolve,reject){
+//     if(complete){
+
+//     resolve("this is true" )
+//     }
+//     else{
+
+// reject(
+//     reject("sry")
+// )
+
+//     }
+
+
+// });
+
+
+
+
+
+//using functions 
+
+
+
+
+function full(complete){
+
+
+
+
+
+return new Promise(function(resolve,reject){
+    console.log("fetching data")//pending 
+
+    setTimeout((wow) => {
+        if(complete){
+
+resolve("this is true" )
+}
+else{
+
+reject(
+reject("sry")
+)
+
+}
+        
+    }, 2000);
+
+
+
+});
+
+}
+// let onfullfill =(result)=>{
+
+// console.log("yu r right")
+
+
+// }
+// let onreject =(result)=>{
+
+// console.log("yu r wrong")
+
+
+// }
+//without making variables
+full(true).then(()=>{
+
+console.log("yu r right")
+
+
+}).catch(()=>{
+
+console.log("yu r wrong")
+
+
+});
+
+
+
+
+
+</script>
+
+    
+</body>
+</html>

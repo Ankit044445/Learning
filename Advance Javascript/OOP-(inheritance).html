@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>OOp inheritance </title>
+</head>
+<body>
+    <script>
+
+class first{
+
+constructor(name){
+    this.newname=name;
+    document.write("hi" +"&nbsp;" + this.newname + "<br>")
+
+
+
+}
+test(name){
+    document.write("hi" +"&nbsp;" + this.newname + "<br>")
+
+
+}
+
+}
+
+class second extends first{
+    stest(name){
+        super.test()
+    document.write("new" +"&nbsp;" + this.newname + "<br>")
+
+
+}
+
+
+
+}
+let s = new second("octa");
+
+s.stest();
+
+
+
+
+
+    </script>
+</body>
+</html>

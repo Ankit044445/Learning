@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP methods</title>
+</head>
+<body>
+    <script>
+
+//construtor method
+
+class student{
+   
+
+constructor(){
+    let name;
+
+    document.write("this is constructor"+ "<br>")
+}
+hello(){
+  
+    document.write(this.name)
+
+}
+
+
+}
+let a = new student();
+a.name= "Ankit"+"<br>"+ "<hr>"
+
+a.hello();
+
+// second method to assign value to a variable
+
+
+class second{
+   
+
+   constructor(name){
+       this.new_way=name;
+       document.write("this is constructor"+ "<br>")
+   
+
+   }
+   go(){
+     
+       document.write(this.new_way)
+   
+   }
+   
+   
+   }
+   let as = new second("hello" + '<br>');
+   let bs = new second("hi" + '<br>'+ "<hr>");
+   
+   
+   as.go();
+   bs.go();
+
+ 
+//Prototype method
+
+
+class octa{
+
+jod(){
+    document.write("this is prototype"+ "<br>" + "<hr>")
+
+
+}
+
+
+}
+let b = new octa();
+b.jod();
+
+// static mehtod
+
+class stc{
+
+
+    static ok (){
+        document.write("this is static"+ "<hr>")
+
+    }
+}
+let c = new stc();
+stc.ok(); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
