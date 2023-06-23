@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch </title>
+</head>
+<body>
+    <script>
+
+
+fetch('json/student_data.json').then(response=>response.json())
+.then((result)=>{
+
+for(var t in result){
+
+    document.write(   result[t].name + "<br>"+ result[t].age + "<br>"+ result[t].city + "<br>"+ "<hr>")
+}
+
+})
+
+
+
+
+.catch((error)=>document.write("404 not found"))
+
+//if only one object to print then
+
+
+
+
+ 
+        fetch('json/student_data.json')
+            .then(response => response.json())
+            .then((result) => {
+                var objectIndex = 0; // Index of the object to print (e.g., 0 for the first object)
+
+                var objectToPrint = result[objectIndex];
+
+                document.write("Name: " + objectToPrint.name + "<br>");
+                document.write("Age: " + objectToPrint.age + "<br>");
+                document.write("City: " + objectToPrint.city + "<br>");
+            })
+            .catch((error) => document.write("404 not found"));
+    </script>
+</body>
+</html>
+
+    </script>
+    

@@ -37,6 +37,7 @@
     .loading-animation {
       position: relative;
       display: inline-block;
+      color: blue;
     }
 
     .loading-animation::after {
@@ -76,15 +77,24 @@
 
       octa
         .then((result) => {
+          document.getElementById("check").value=""
           document.getElementById("jod").innerHTML = "";
           document.getElementById("knock").innerHTML = "Allowed";
           document.getElementById("result-section").classList.add("visible");
         })
         .catch((error) => {
+          document.getElementById("check").value=""
           document.getElementById("jod").innerHTML = "";
           document.getElementById("knock").innerHTML = "Not Allowed";
           document.getElementById("result-section").classList.add("visible");
         });
+    }
+    let reset= ()=>{
+      document.getElementById("check").value=""
+          document.getElementById("jod").innerHTML = "";
+          document.getElementById("knock").innerHTML = "";
+
+
     }
   </script>
   <p id="jod"></p>
@@ -93,5 +103,6 @@
     <p id="knock">Please wait...</p>
   </div>
   <button class="check-button" onclick="take()">Check</button>
+  <button class="check-button" onclick="reset()">Reset</button>
 </body>
 </html>
