@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symbols</title>
+</head>
+<body>
+    <script>
+//         let a = Symbol(3);
+//         let b = Symbol(5);
+
+// if(a === b){
+
+//     document.write(true + "<br>")
+// }
+// else{
+
+//     document.write(false + "<br>")
+// }
+// document.write(a.description)
+
+
+// how to use symbol in object
+
+let age = Symbol('Test');
+
+
+let h ={
+    name:'Ankit',
+    class:'Btech',
+[age]:22,
+
+
+}
+// for(var j in h){
+
+
+
+//     document.write(h[j])
+// }
+
+document.write(JSON.stringify(h))
+
+
+    </script>
+    
+</body>
+</html>
