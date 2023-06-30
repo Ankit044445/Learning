@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="/BOOTSTRAP/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+ ¸
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NAVBAR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  </head>
+  <style>
+    .nav-link {
+      color: whitesmoke;
+    }
+    .nav-link:hover {
+      background-color: white;
+      color: black;
+    }
+    .row {
+   margin-left: -8px;
+   margin-right: -8px;
+ }
+ 
+  </style>
+  <body>
+    <div class="row">
+      <h2 class="bg-warning text-center">Noraml nav</h2>
+      <div class="col d-flex justify-content-center bg-info">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <h2 class="bg-warning text-center">Flex-column</h2>
+      <div class="col bg-info">
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="row">
+      <h2 class="bg-warning text-center">Nav-pills</h2>
+      <div class="col d-flex justify-content-center bg-info">
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="row g-0">
+      <h2 class="bg-warning text-center">Nav-fill</h2>
+
+      <div class="col bg-info">
+        <ul class="nav nav-pills nav-fill">
+          <img
+            src="/BOOTSTRAP/download 2.png"
+            style="width: 112px; height: 43px"
+          />
+          <li class="nav-item">
+            <a href="#" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">support</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr />
+    <div class="container-fluid">
+    <h2 class="bg-danger text-center text-white">Nav with brand and search</h2>
+    <div class="row  py-2 g-0"  >
+      <div class="col">
+        <nav class="navbar navbar-expand navbar-light bg-primary ">
+          <ul class="navbar-nav nav-pills " style="margin-right: auto;">
+            <a href="https://www.adroitinfosol.com/" class="navbar-brand"
+              >Adroit infosol</a
+            >
+            <li class="nav-item ">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle "  href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item dropdown-toggle" href="#" id="nestedDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Another action
+                    </a>
+                    <ul class="dropdown-menu " aria-labelledby="nestedDropdown">
+                      <li><a class="dropdown-item" href="#">Nested Action 1</a></li>
+                      <li><a class="dropdown-item" href="#">Nested Action 2</a></li>
+                      <li><a class="dropdown-item" href="#">Nested Action 3</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              
+              
+            <li class="nav-item">
+              <a href="#" class="nav-link">support</a>
+            </li>
+          </ul>
+          
+          <form action="" class="form-inline ">
+            <input type="search" class="form-control mr-sm-2" placeholder="Search">
+ 
+          </form>
+          <button class="btn btn-success my-2 my-sm-0 ms-1" type="submit">Click</button>
+        </nav>
+      </div>
+    </div>
+    <hr>
+    
+
+  
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="path/to/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+  </body>
+  
+</html>

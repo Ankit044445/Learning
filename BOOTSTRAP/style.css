@@ -20,3 +20,8 @@ background-color: beige;
   justify-content: center;
   padding-bottom: 10px;
   }
+  .container{
+
+border: 1px solid black;
+
+  }
