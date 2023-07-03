@@ -68,9 +68,9 @@
 
         setTimeout(() => {
           if (j > 12) {
-            reject("Sorry");
+            resolve("Sorry");
           } else {
-            resolve("OK");
+            reject("OK");
           }
         }, 2000);
       });
@@ -79,13 +79,13 @@
         .then((result) => {
           document.getElementById("check").value=""
           document.getElementById("jod").innerHTML = "";
-          document.getElementById("knock").innerHTML = "Allowed";
+          document.getElementById("knock").innerHTML = "Not-Allowed";
           document.getElementById("result-section").classList.add("visible");
         })
         .catch((error) => {
           document.getElementById("check").value=""
           document.getElementById("jod").innerHTML = "";
-          document.getElementById("knock").innerHTML = "Not Allowed";
+          document.getElementById("knock").innerHTML = " Allowed";
           document.getElementById("result-section").classList.add("visible");
         });
     }
