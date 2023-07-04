@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="dmxAppConnect/dmxAppConnect.js"></script>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css.style.css" />
+    <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
+    <script src="js/routes.js" defer></script>
+    <script src="dmxAppConnect/dmxBootstrap5Offcanvas/dmxBootstrap5Offcanvas.js" defer></script>
+</head>
+
+<body is="dmx-app" id="offcast">
+    <div class="offcanvas offcanvas-end bg-dark text-white text-center mark w-25 border-3" id="offcanvas1" is="dmx-bs5-offcanvas" tabindex="-1" scroll="true">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Offcanvas title</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p>Offcanvas body text goes here.</p>
+        </div>
+    </div>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light text-black-50 bg-warning">
+            <div class="container">
+                <a class="navbar-brand ms-4 me-auto text-body" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1_collapse" aria-controls="navbar1_collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar1_collapse">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active me-3 text-black-50" href="#">Home</a>
+                        <a class="nav-item nav-link me-3 text-black-50" href="#">About</a>
+                        <a class="nav-item nav-link text-black-50" href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="navbar-nav justify-content-end d-none d-lg-flex ms-md-auto">
+                    <a class="nav-item nav-link" href="#"><i class="fa fa-slack"></i></a>
+                    <a class="nav-item nav-link" href="#"><i class="fa fa-twitter"></i></a>
+                    <a class="nav-item nav-link" href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <button id="btn1" class="btn btn-primary fw-bolder ms-1 w-auto text-start align-self-end bg-dark" dmx-on:click="offcanvas1.show()"><i class="bi bi-caret-right-fill"></i><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                        <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                    </svg></button>
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-white bg-secondary h-auto shadow-sm text-center lh-sm mark text-uppercase w-100">This is offcast</h1>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </header>
+    <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

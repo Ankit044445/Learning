@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="dmxAppConnect/dmxAppConnect.js"></script>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/5/css/bootstrap.min.css" />
+    <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
+    <script src="js/routes.js" defer></script>
+    <script src="dmxAppConnect/dmxBootstrap5Alert/dmxBootstrap5Alert.js" defer></script>
+</head>
+
+<body is="dmx-app" id="events">
+    <div class="alert bg-primary " id="alert1" is="dmx-bs5-alert" role="alert" style="display:hidden">
+        <p>This is a nice alert!</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col mt-1">
+
+                <ul class="nav nav-pills nav-fill gap-2 p-1 small rounded-5 shadow-sm bg-secondary" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active rounded-5 bg-secondary" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 text-light" id="profile-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link rounded-5 text-light" id="contact-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="false">Contact</button>
+                    </li>
+                </ul>
+                <div class="row">
+                    <div class="col-3">
+                        <button id="btn1" class="btn mt-3 text-white bg-danger" dmx-on:click="">Button</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

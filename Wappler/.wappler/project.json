@@ -1,0 +1,31 @@
+{
+  "projectName": "Wrappler basics",
+  "designFramework": "bootstrap5",
+  "useRouting": true,
+  "routingHandler": "appConnect",
+  "routingFile": "/js/routes.js",
+  "styleFile": "/css/style.css",
+  "assetsFolder": "/assets",
+  "frameworks": [
+    {
+      "name": "appConnect",
+      "type": "local"
+    },
+    {
+      "name": "bootstrap5",
+      "type": "local"
+    },
+    {
+      "name": "capacitor",
+      "type": "local"
+    }
+  ],
+  "runtime": "capacitor",
+  "projectType": "app",
+  "capacitor": {
+    "capacitor": {
+      "checked": true
+    },
+    "platform": "web"
+  }
+}
