@@ -1,0 +1,13 @@
+<!-- Wappler include head-page="layouts/my-main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="ShoworHideElementsConditionally" appConnect="local" components="{dmxFormatter:{}}" -->
+<meta name="ac:route" content="/Show-or-Hide-Elements-Conditionally">
+<main>
+    <dmx-value id="var1" dmx-bind:value="1"></dmx-value>
+    <div class="container wappler-block pt-5 pb-5">
+        <div class="row justify-content-center text-center">
+            <div class="col col-md-8" style="display:none" dmx-show="(var1.value == 2)">
+                <h1>Your Amazing Product</h1>
+                <p class="text-h3">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus.</p>
+            </div>
+        </div>
+    </div>
+</main>

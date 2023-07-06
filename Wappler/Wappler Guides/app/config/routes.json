@@ -1,0 +1,50 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "page": "index",
+      "routeType": "page",
+      "layout": "main"
+    },
+    {
+      "path": "/adding-responsive-images",
+      "page": "adding-responsive-images",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Dynamicattributes",
+      "page": "Dynamicattributes",
+      "layout": "my-main"
+    },
+    {
+      "path": "/URL-parameters",
+      "page": "URL-parameters",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Show-or-Hide-Elements-Conditionally",
+      "page": "Show-or-Hide-Elements-Conditionally",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Sticky-Navigation-on-Scroll",
+      "page": "Sticky-Navigation-on-Scroll",
+      "layout": "my-main"
+    },
+    {
+      "path": "/table",
+      "page": "table",
+      "layout": "my-main"
+    },
+    {
+      "path": "/current-date-and-time",
+      "page": "current-date-and-time",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Nested-Repeat-Regions",
+      "page": "Nested-Repeat-Regions",
+      "layout": "my-main"
+    }
+  ]
+}

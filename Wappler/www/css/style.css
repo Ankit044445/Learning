@@ -16,3 +16,66 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
 }
+.style1 {
+  background-color: #000;
+}
+.style2 {
+  font-family: Georgia, serif;
+  background-color: #fff;
+}
+.:hover {
+  border-color: #198754;
+  -webkit-transition-delay: 1s;
+          transition-delay: 1s;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+          font-family: "Times New Roman", Times, serif;
+          background-color: #ffc107;
+}
+.style3 {
+  border-width: 1px;
+  border-color: rgba(13, 110, 253, 0.78);
+}
+.style3:hover {
+  border-width: 1px;
+  border-color: #20c997;
+}
+.octa {}
+.style4 {
+  background-color: #fff;
+}
+.style4:hover {
+  margin-right: 0px;
+  color: #198754;
+  border-top-width: 0px;
+}
+.style5 {}
+.style5.lo {
+  font-family: "Times New Roman", Times, serif;
+  border-width: 1px;
+  border-color: rgba(13, 110, 253, 0.81);}
+.style6 {
+  border-color: #19874f;
+}
+.style5.lo:hover {
+  border-color: #20c997;
+}
+.style7 {
+  border-color: rgba(13, 110, 253, 0.8);
+}
+.style7:hover {
+  border-color: rgba(32, 201, 151, 0.88) rgba(32, 201, 151, 0.8) #20c997 #20c997;
+}
+.style8 {
+  padding-right: 17px;
+  border-top-left-radius: 11px;
+  border-top-right-radius: 11px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 11px;
+}
+.style9 {
+  background-color: #fff;
+}
+.style10 {
+  background-image: radial-gradient(circle, black 0%, white 100%);
+}

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+
+<head>
+  <base href="/">
+  <script src="/dmxAppConnect/dmxAppConnect.js"></script>
+  <meta charset="UTF-8">
+  <title>Untitled Document</title>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="/bootstrap/5/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .navbar {
+      position: sticky;
+      top: 0;
+      background-color: rgba(0, 0, 0, 0);
+      font-weight: bold;
+    }
+
+    .navbar-brand {
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link:focus {
+      background-color: #fff;
+      color: #000;
+    }
+
+    .mt {
+      margin-top: 10px;
+    }
+
+    .bg-light.wappler-block {
+      margin-top: auto;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js" integrity="sha256-CutOzxCRucUsn6C6TcEYsauvvYilEniTXldPa6/wu0k=" crossorigin="anonymous"></script>
+  <script src="/dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
+  <script src="/dmxAppConnect/dmxRouting/dmxRouting.js" defer></script>
+  <script src="/dmxAppConnect/dmxBootstrap5Alert/dmxBootstrap5Alert.js" defer></script>
+  <script src="/dmxAppConnect/dmxFormatter/dmxFormatter.js" defer></script>
+  <link rel="stylesheet" href="/dmxAppConnect/dmxDatePicker/daterangepicker.min.css" />
+  <script src="/dmxAppConnect/dmxDatePicker/daterangepicker.min.js" defer></script>
+  <link rel="stylesheet" href="/dmxAppConnect/dmxDatePicker/dmxDatePicker.css" />
+  <script src="/dmxAppConnect/dmxDatePicker/dmxDatePicker.js" defer></script>
+
+
+</head>
+
+<body is="dmx-app" id="mymain">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light justify-content-between bg-warning sticky-top">
+      <a class="navbar-brand mark text-uppercase w-25 text-center style3 fw-bold h-auto ms-auto me-auto pt-2 bg-dark text-white" href="#" style="">Adroit</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1_collapse" aria-controls="navbar1_collapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-center" id="navbar1_collapse">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home</a>
+          <a class="nav-item nav-link" href="#"><span class="mt">About</span></a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+      </div>
+      <div class="navbar-nav justify-content-end d-none d-lg-flex ms-md-auto">
+        <a class="nav-item nav-link" href="#"><i class="fa fa-slack"></i></a>
+        <a class="nav-item nav-link" href="#"><i class="fa fa-twitter"></i></a>
+        <a class="nav-item nav-link" href="#"><i class="fa fa-facebook"></i></a>
+      </div>
+    </nav>
+  </header>
+  <div is="dmx-view" id="content">
+    <%- await include(content, locals); %></div>
+  <footer class="wappler-block mt-auto">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light p-0">
+            <div class="container-fluid bg-warning">
+              <span class="navbar-text p-2 d-none d-sm-block d-md-block small text-dark"><i class="fa fa-map-marker"></i> 1234 Street Name, City Name</span>
+              <span class="navbar-text p-2 small text-dark"><i class="fa fa-phone"></i> (800) 123-4567</span>
+              <span class="navbar-text p-2 d-none d-sm-block d-md-block small text-dark"><i class="fa fa-envelope"></i> mail@example.com</span>
+              <span class="navbar-text p-2 d-none d-sm-block d-md-block small ms-auto bg-warning text-dark">© Copyright 2019. All Rights Reserved.
+              </span>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/bootstrap/5/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

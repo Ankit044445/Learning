@@ -1,0 +1,42 @@
+{
+  "Inserting-html-anchor-tags.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "adding-responsive-images.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Dynamicattributes.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "URL-parameters.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Font-Awsome.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Show-or-Hide-Elements-Conditionally.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Sticky-Navigation-on-Scroll.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "table.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "current-date-and-time.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Nested-Repeat-Regions.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  }
+}

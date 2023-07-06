@@ -11,17 +11,32 @@
     <script src="dmxAppConnect/dmxBootstrap5Navigation/dmxBootstrap5Navigation.js" defer></script>
     <script src="js/routes.js" defer></script>
     <script src="dmxAppConnect/dmxBootstrap5Alert/dmxBootstrap5Alert.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body is="dmx-app" id="events">
+<body is="dmx-app" id="events" class="style6">
+
     <div class="alert bg-primary " id="alert1" is="dmx-bs5-alert" role="alert" style="display:hidden">
-        <p>This is a nice alert!</p>
+        <p class="text-light align-self-start ms-0 text-justify">This is a nice alert!</p>
     </div>
     <div class="container">
         <div class="row">
+            <div class="container wappler-block p-5 d-hide border-warning " style="display:hidden">
+                <div class="row text-center p-5 text-dark bg-body d-print-flex ">
+                    <div class="col text-muted text-center" style="display:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="#51c42b" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                        </svg>
+                        <h1 class="mt-4">Details filled succesfully</h1>
+                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum enim nesciunt vel minus
+                            assumenda cumque
+                            neque voluptate quidem ea reprehenderit doloremque ut nulla ex, eius aut non sunt rem minima.</p>
+                    </div>
+                </div>
+            </div>
             <div class="col mt-1">
 
-                <ul class="nav nav-pills nav-fill gap-2 p-1 small rounded-5 shadow-sm bg-secondary" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);">
+                <ul class="nav nav-pills nav-fill gap-2 p-1 small rounded-5 shadow-sm bg-secondary" id="pillNav2" role="tablist" style="--bs-nav-link-color: var(--bs-white); --bs-nav-pills-link-active-color: var(--bs-primary); --bs-nav-pills-link-active-bg: var(--bs-white);" style="display:hidden">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active rounded-5 bg-secondary" id="home-tab2" data-bs-toggle="tab" type="button" role="tab" aria-selected="true">Home</button>
                     </li>
@@ -34,14 +49,56 @@
                 </ul>
                 <div class="row">
                     <div class="col-3">
-                        <button id="btn1" class="btn mt-3 text-white bg-danger" dmx-on:click="">Button</button>
+                        <button id="btn1" class="btn mt-3 text-white bg-danger style8" dmx-on:click="alert1.show()">Button</button>
                     </div>
 
                 </div>
+
             </div>
         </div>
-        <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
-
+    </div>
+    <div class="container mt-5">
+        <h2 class="mt-4 text-body text-center octa">-:Form:-</h2>
+        <h5 class="mt-3 mb-2">Enter your details</h5>
+        <div class="row">
+            <div class="text-primary bg-light align-self-start col fw-bold mark mb-0 pb-2">
+                <form id="form1">
+                    <div class="form-group md-3">
+                        <label for="input1" class="form-label col">Name</label>
+                        <input type="text" class="form-control style3" id="input1" name="input1" aria-describedby="input1_help" placeholder="Enter some text">
+                        <small id="input1_help" class="form-text text-muted">Your input is very valuable.</small>
+                    </div>
+                    <div class="form-group md-3">
+                        <label for="input1" class="form-label">Email</label>
+                        <input type="email" class="form-control style7" id="input1" name="input1" aria-describedby="input1_help" placeholder="Enter some email">
+                        <small id="input1_help" class="form-text text-muted">Your input is very valuable.</small>
+                    </div>
+                    <div class="form-group md-3">
+                        <label for="input1" class="form-label">Gender</label>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input style2" type="checkbox" value="" id="checkbox1" name="checkbox1">
+                            <label class="form-check-label" for="checkbox1">Male</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input style2" type="checkbox" value="" id="checkbox2" name="checkbox2">
+                            <label class="form-check-label" for="checkbox2">Female</label>
+                        </div>
+                        <small id="input1_help" class="form-text text-muted">Your input is very valuable.</small>
+                    </div>
+                    <div class="form-group md-3">
+                        <label for="input1" class="form-label">Country</label>
+                        <select id="select1" class="form-select style5 lo">
+                            <option value="2" class="style9 bg-white">India</option>
+                            <option value="3" class="style10">Pakistan</option>
+                        </select>
+                        <small id="input1_help" class="form-text text-muted">Your input is very valuable.</small>
+                    </div>
+                    <button class="btn btn-primary align-self-end mt-3" dmx-on:click=""> Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap/5/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
