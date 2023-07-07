@@ -1,0 +1,34 @@
+<!-- Wappler include head-page="layouts/my-main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="movinganimations" appConnect="local" components="{dmxAnimateCSS:{}}" -->
+<meta name="ac:route" content="/moving-animations">
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 mt-3">
+            <div class="card" dmx-animate-inview="fadeIn" dmx-animate-outview="fadeOutLeft" dmx-animate-enter.duration:400.delay:100="bounceIn" dmx-animate-leave.duration:100.delay:50="bounceOut" dmx-animate-move="ease-in-out">
+                <img class="card-img-top" alt="Card image cap" src="/assets/images/istockphoto-936520132-612x612.jpeg" dmx-animate-enter.duration:1000.delay:50.random="fadeInDown" dmx-animate-leave.duration:1000="rotateOutUpRight">
+                <div class="card-body mt-0">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+
+        </div>
+        <hr class="mt-3">
+        <h2>Animations Delay</h2>
+
+
+
+
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="/assets/images/istockphoto-936520132-612x612.jpeg" class="w-100" dmx-animate-inview="zoomIn">
+        </div>
+        <div class="col-4">
+            <img src="/assets/images/istockphoto-936520132-612x612.jpeg" class="w-100" dmx-animate-inview.duration:800.delay:100="tada">
+        </div>
+        <div class="col-4" dmx-animate-inview.duration:800.delay:200="flipInX">
+            <img src="/assets/images/istockphoto-936520132-612x612.jpeg" class="w-100" dmx-animate-inview.duration:800.delay:200="">
+        </div>
+    </div>
+</div>

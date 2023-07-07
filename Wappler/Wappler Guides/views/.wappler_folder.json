@@ -38,5 +38,45 @@
   "Nested-Repeat-Regions.ejs": {
     "layoutPage": "my-main",
     "description": ""
+  },
+  "ShowDisabledButtonwithSpinneronFormSubmit.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Modals.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "managing-themes.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "responsive-navbar.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Applying-a-Page-Preloader.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "moving-animations.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Ligh-box.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Responsive-Slideshow.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "SwiperBasicOptions.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "lazy-load-image.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
   }
 }

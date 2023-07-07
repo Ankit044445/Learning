@@ -1,0 +1,47 @@
+<!-- Wappler include head-page="layouts/my-main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="FormattingDynamicDataforClientSideDisplay" appConnect="local" components="{dmxTagify:{},dmxBootstrap5Modal:{}}" -->
+<div class="modal" id="modal1" is="dmx-bs5-modal" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row h-auto">
+        <div class="col-12 text-primary">
+            <form id="form1">
+                <div class="form-group md-3"> <label for="input1" class="form-label">Some text</label>
+                    <input type="text" class="form-control" id="input1" name="input1" aria-describedby="input1_help" placeholder="Enter some text">
+                    <small id="input1_help" class="form-text text-muted">Your input is very valuable.</small>
+                </div>
+                <div class="form-group md-3"> <label for="input2" class="form-label">Some text</label>
+                    <input type="text" class="form-control" id="input2" name="input2" aria-describedby="input1_help" placeholder="Enter some text">
+                    <small id="input1_help1" class="form-text text-muted">Your input is very valuable.</small>
+                </div>
+                <div class="form-group md-3"> <label for="input3" class="form-label">Some text</label>
+                    <input type="text" class="form-control" id="input3" name="input3" aria-describedby="input1_help" placeholder="Enter some text">
+                    <small id="input1_help2" class="form-text text-muted">Your input is very valuable.</small>
+                    <br>
+                    <div class="form-group">
+                        <button class="btn btn-primary mt-2 ms-0 ps-4 pe-4" dmx-on:click="modal1.show()">
+                            click</button>
+
+                    </div>
+
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>

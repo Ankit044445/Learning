@@ -1,0 +1,15 @@
+{
+  "bootstrap5": {
+    "basic": {
+      "primary": "#563d7c",
+      "success": "#28a745",
+      "info": "#17a2b8",
+      "dark": "#343434",
+      "link-color": "#007bff",
+      "headings-font-family": "Alegreya SC:400",
+      "enable-shadows": true,
+      "theme": "Bootstrap Purple"
+    },
+    "advanced": {}
+  }
+}

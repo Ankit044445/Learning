@@ -45,6 +45,61 @@
       "path": "/Nested-Repeat-Regions",
       "page": "Nested-Repeat-Regions",
       "layout": "my-main"
+    },
+    {
+      "path": "/ShowDisabledButtonwithSpinneronFormSubmit",
+      "page": "ShowDisabledButtonwithSpinneronFormSubmit",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Modals",
+      "page": "Modals",
+      "layout": "main"
+    },
+    {
+      "path": "/managing-themes",
+      "page": "managing-themes",
+      "layout": "my-main"
+    },
+    {
+      "path": "/responsive-navbar",
+      "page": "responsive-navbar",
+      "layout": "main"
+    },
+    {
+      "path": "/bootstraps-works/responsive-navbar-and-using-parralax",
+      "page": "bootstraps-works/responsive-navbar-and-using-parralax",
+      "layout": "main"
+    },
+    {
+      "path": "/Applying-a-Page-Preloader",
+      "page": "Applying-a-Page-Preloader",
+      "layout": "my-main"
+    },
+    {
+      "path": "/moving-animations",
+      "page": "moving-animations",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Ligh-box",
+      "page": "Ligh-box",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Responsive-Slideshow",
+      "page": "Responsive-Slideshow",
+      "layout": "my-main"
+    },
+    {
+      "path": "/SwiperBasicOptions",
+      "page": "SwiperBasicOptions",
+      "layout": "my-main"
+    },
+    {
+      "path": "/lazy-load-image",
+      "page": "lazy-load-image",
+      "layout": "my-main"
     }
   ]
 }

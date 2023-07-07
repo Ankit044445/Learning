@@ -21,3 +21,26 @@ a.nav-item.nav-link.active.style1 {
 .:active {
     color: #ffc107
 }
+.style4 { 
+}
+.style5 {
+    height: 20px;
+    width: 20px;
+    margin-left: 5px;
+    padding-left: 6px
+}
+.style6 {
+    font-size: 20px;
+    line-height: 20px
+}
+#swiper2 {
+    height: 100vh 
+}
+div.swiper-slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 
+}
+.style7 {
+    background-image: url("../assets/images/istockphoto-936520132-612x612.jpeg")
+}
