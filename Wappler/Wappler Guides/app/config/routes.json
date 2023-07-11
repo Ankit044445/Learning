@@ -100,6 +100,94 @@
       "path": "/lazy-load-image",
       "page": "lazy-load-image",
       "layout": "my-main"
+    },
+    {
+      "path": "/parralx",
+      "page": "parralx",
+      "layout": "my-main"
+    },
+    {
+      "path": "/responsive-video",
+      "page": "responsive-video",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Adding-Transitions-to-page-elements",
+      "page": "Adding-Transitions-to-page-elements",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Using-the-Date-Range-Picker-with-Insert-and-Update-Record",
+      "page": "Using-the-Date-Range-Picker-with-Insert-and-Update-Record",
+      "layout": "my-main"
+    },
+    {
+      "path": "/App-connect",
+      "page": "App-connect",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Confirm",
+      "page": "Confirm",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Toogle-Comment",
+      "page": "Toogle-Comment",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Tagify",
+      "page": "Tagify",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Notifications",
+      "page": "Notifications",
+      "layout": "main"
+    },
+    {
+      "path": "/cookies",
+      "page": "cookies",
+      "layout": "my-main"
+    },
+    {
+      "path": "/passing-values",
+      "page": "passing-values",
+      "layout": "my-main"
+    },
+    {
+      "path": "/page2",
+      "page": "page2",
+      "layout": "my-main"
+    },
+    {
+      "path": "/page21",
+      "page": "page21",
+      "layout": "my-main"
+    },
+    {
+      "path": "/arrays",
+      "page": "arrays",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Shopping",
+      "page": "Shopping",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Project",
+      "page": "Project"
+    },
+    {
+      "path": "/Project2",
+      "page": "Project2"
+    },
+    {
+      "path": "/New-project",
+      "page": "New-project",
+      "layout": "main"
     }
   ]
 }

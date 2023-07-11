@@ -1,0 +1,58 @@
+<!-- Wappler include head-page="layouts/main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="Notifications" appConnect="local" components="{dmxTagify:{},dmxBootstrap5Alert:{},dmxNotifications:{},dmxBootstrap5Toasts:{}}" -->
+<div is="dmx-bs5-toasts" id="toasts1"></div>
+<dmx-notifications id="notifies1" info-background="#2aab6b"></dmx-notifications>
+<meta name="ac:route" content="/Notifications">
+<div class="container">
+    <form id="login1">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-7 col-xl-5 text-start">
+                <div class="row">
+                    <div class="col">
+                        <h1>Log In</h1>
+                        <p class="text-h3">Enter your details below.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-4">
+                        <input type="text" id="inp_email" name="email" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <input type="password" id="inp_password" name="password" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <button id="login1_submit" class="btn bg-warning text-dark w-100" type="submit" data-bs-toggle="button" dmx-on:click="notifies1.success('Form Filled Succesfully')">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-12 col-md-8 col-lg-7 col-xl-5 text-start">
+                <div class="row">
+                    <div class="col">
+                        <h1>Log In</h1>
+                        <p class="text-h3">Enter your details below.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mt-4">
+                        <input type="text" id="inp_email1" name="email1" class="form-control" placeholder="Email">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <input type="password" id="inp_password1" name="password1" class="form-control" placeholder="Password">
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col">
+                        <button id="login1_submit1" class="btn w-100 bg-primary text-white" type="submit" data-bs-toggle="button" dmx-on:click.prevent="toasts1.show({message: 'Where is everyone hiding', delay: 4000, title: 'Life is a dream', subtitle: 'They initiated'})">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

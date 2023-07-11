@@ -1,0 +1,20 @@
+<!-- Wappler include head-page="layouts/my-main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="page21" appConnect="local" components="{dmxStateManagement:{}}" -->
+<dmx-session-manager id="session2"></dmx-session-manager>
+<dmx-session-manager id="session1"></dmx-session-manager>
+<meta name="ac:route" content="/page21">
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Your Value is: {{session1.data.aaa}}</h1>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="text-center">Your name is:-{{session2.data.first}}</h2>
+                        <h2 class="mt-5 mb-0 text-center">Your Lastname is:-{{session2.data.second}}</h2>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

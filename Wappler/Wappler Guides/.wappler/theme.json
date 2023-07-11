@@ -1,15 +1,21 @@
 {
   "bootstrap5": {
     "basic": {
-      "primary": "#563d7c",
-      "success": "#28a745",
-      "info": "#17a2b8",
-      "dark": "#343434",
+      "primary": "#7F0FFF",
+      "success": "#420084",
+      "info": "#7ebcfa",
+      "dark": "#000633",
       "link-color": "#007bff",
-      "headings-font-family": "Alegreya SC:400",
+      "headings-font-family": "Muli",
       "enable-shadows": true,
-      "theme": "Bootstrap Purple"
+      "theme": "Poypull",
+      "secondary": "#bed6d5",
+      "danger": "#f2460d",
+      "warning": "#ff9933",
+      "light": "#eef0f2"
     },
-    "advanced": {}
+    "advanced": {
+      "navbar-dark-color": "#f3f3f3"
+    }
   }
 }

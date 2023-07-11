@@ -27,5 +27,6 @@
       "checked": true
     },
     "platform": "web"
-  }
+  },
+  "folder": "__desktop__"
 }

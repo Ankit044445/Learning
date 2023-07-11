@@ -1,0 +1,11 @@
+<!-- Wappler include head-page="layouts/my-main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="Confirm" appConnect="local" components="{dmxBootbox5:{}}" -->
+<meta name="ac:route" content="/Confirm">
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+      </div>
+    </div>
+  </div>
+</main>

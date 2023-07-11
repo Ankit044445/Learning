@@ -1,0 +1,143 @@
+<!-- Wappler include head-page="layouts/main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="Newproject" appConnect="local" components="{dmxBootstrap5Navigation:{},dmxAnimateCSS:{},dmxLightbox:{},dmxSlideshow:{},dmxSlideshow3DTransitions:{},dmxPreloader:{},dmxBootstrap5Offcanvas:{},dmxTyped:{}}" -->
+<dmx-toggle id="toggle1"></dmx-toggle>
+<dmx-preloader id="preloader1" spinner="rotatingPlane" bgcolor="#9B24F4" color="#FFFFFF"></dmx-preloader>
+<dmx-lightbox id="lightbox1"></dmx-lightbox>
+<meta name="ac:route" content="/New-project">
+<main>
+    <div class="container-fluid">
+        <header class="bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <nav class="navbar navbar-expand-lg navbar-light justify-content-between bg-primary">
+                            <a class="navbar-brand ms-auto me-auto pt-1 ps-3 pe-3 style20 w-25 h-auto text-dark bg-light" href="#">ADROIT-<i class="fa fa-user">&nbsp;</i></a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1_collapse" aria-controls="navbar1_collapse" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbar1_collapse">
+                                <div class="navbar-nav">
+                                    <a class="nav-item nav-link active text-light" href="#">Home</a>
+                                    <a class="nav-item nav-link text-light" href="#">About</a>
+                                    <a class="nav-item nav-link text-light" href="#">Contact</a>
+                                </div>
+                            </div>
+                            <div class="navbar-nav justify-content-end d-none d-lg-flex ms-md-auto">
+                                <a class="nav-item nav-link" href="#"><i class="fa fa-slack"></i></a>
+                                <a class="nav-item nav-link" href="#"><i class="fa fa-twitter"></i></a>
+                                <a class="nav-item nav-link" href="#"><button id="btn1" class="btn btn-outline-info" dmx-on:click="offcanvas1.show()">Offcanvas</button>
+                                    <i class="fa fa-facebook"></i></a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="col-12">
+            <h2 class="mt-2 text-center text-white bg-dark">Animations</h2>
+        </div>
+        <div class="row" dmx-animate-leave.duration:800.delay:20="zoomOutUp">
+            <div class="col-4">
+                <div class="card ms-2" dmx-animate-enter.duration:800.delay:50="jackInTheBox">
+                    <img class="card-img-top" alt="Card image cap" src="/assets/images/s.jpeg">
+                    <div class="card-body card-group">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="card" dmx-animate-enter.duration:800.delay:20="rotateInDownRight">
+                    <img class="card-img-top" alt="Card image cap" src="/assets/images/istockphoto-936520132-612x612.jpeg">
+                    <div class="card-body">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card">
+                    <img class="card-img-top" alt="Card image cap" src="/assets/images/s.jpeg" dmx-animate-enter.duration:800.delay:20="wobble">
+                    <div class="card-body" dmx-animate-enter="wobble">
+                        <h4 class="card-title">Card title</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="mt-2 text-center text-white bg-dark">Light-box</h2>
+
+        <div class="row">
+            <div class="col-9 align-self-end style21 ms-0">
+                <a href="/assets/images/s.jpeg" dmx-lightbox="">
+                    <img src="/assets/images/s.jpeg" class="style22" dmx-animate-enter="fadeInDown">
+                </a>
+            </div>
+        </div>
+        <h2 class="mt-2 text-center text-white bg-dark">Slide-Show</h2>
+        <div class="row">
+            <div class="col-9 ms-0 style23 shadow border-1 border-primary rounded-1 rounded mh-100">
+                <dmx-slideshow id="slideshow1" show-paging="true">
+                    <dmx-slide url="assets/images/thumbnail-1.jpg" thumb="assets/images/thumbs/thumbnail-1.png" title="thumbnail 1"></dmx-slide>
+                    <dmx-slide url="assets/images/thumbnail-2.jpg" thumb="assets/images/thumbs/thumbnail-2.png" title="thumbnail 2"></dmx-slide>
+                </dmx-slideshow>
+
+            </div>
+
+
+        </div>
+        <h2 class="text-center text-white bg-dark mt-5 style26">Swiper</h2>
+
+        <div class="row">
+            <div class="style24 col-7">
+                <dmx-slideshow id="slideshow13" show-nav="true" class="style25">
+                    <dmx-slide id="slide1" url="/assets/images/istockphoto-936520132-612x612.jpeg"></dmx-slide>
+                    <dmx-slide url="/assets/images/s.jpeg" thumb="assets/images/s/thumbs/istockphoto-936520132-612x612.png"></dmx-slide>
+                </dmx-slideshow>
+            </div>
+        </div>
+        <h2 class="text-center text-white bg-dark mt-5">Typing Animations</h2>
+        <div class="row">
+            <div class="col">
+                <div class="offcanvas offcanvas-end" id="offcanvas1" is="dmx-bs5-offcanvas" tabindex="-1">
+                    <div class="offcanvas-header text-warning bg-warning">
+                        <h5 class="offcanvas-title text-dark">Offcanvas title</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body text-light bg-dark">
+                        <p>Offcanvas body text goes here.</p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h1 class="style27 text-white fw-bolder">Hi :&nbsp;<span is="dmx-typed" strings="Octa,Ankit" smart-backspace="true" loop="true" fade="true" speed="80" back-speed="10"></span>
+                    </h1>
+
+                </div>
+
+            </div>
+        </div>
+        <h2 class="text-center text-white bg-dark mt-5">Toogle</h2>
+        <div class="col">
+            <div class="col">
+                <button id="btn2" class="btn style28 text-warning btn-outline-info bg-success fw-bold w-25" dmx-on:click="toggle1.check()">Button</button>
+                <div class="card" dmx-show="toggle1.checked">
+                    <div class="card-header" dmx-animate-enter="fadeInDown" dmx-animate-move="">
+                        Featured
+                    </div>
+                    <div class="card-body" dmx-animate-enter="lightSpeedIn">
+                        <h5 class="card-title">Special title treatment</h5>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+
+            </div>
+            <footer>
+
+            </footer>
+        </div>

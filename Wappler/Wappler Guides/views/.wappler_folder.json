@@ -78,5 +78,81 @@
   "lazy-load-image.ejs": {
     "layoutPage": "my-main",
     "description": ""
+  },
+  "parralx.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "responsive-video.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Adding-Transitions-to-page-elements.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Using-the-Date-Range-Picker-with-Insert-and-Update-Record.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "App-connect.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Confirm.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "App-connect)(.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Toogle-Comment.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Tagify.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Notifications.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "cookies.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "passing-values.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "page2.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "page21.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "arrays.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Shopping.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Project.ejs": {
+    "layoutPage": "",
+    "description": ""
+  },
+  "Project2.ejs": {
+    "layoutPage": "",
+    "description": ""
+  },
+  "New-project.ejs": {
+    "layoutPage": "main",
+    "description": ""
   }
 }

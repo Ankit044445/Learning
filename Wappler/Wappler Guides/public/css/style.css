@@ -44,3 +44,131 @@ div.swiper-slide {
 .style7 {
     background-image: url("../assets/images/istockphoto-936520132-612x612.jpeg")
 }
+@media (min-width: 1400px) {
+.style8 {
+        background-color: #fff
+    }
+}
+.style9 {
+    font-weight: bold;
+    -webkit-transition-duration: 0.25s;
+    -webkit-transition-timing-function: cubic-bezier(0.47, 0.26, 0.27, 0.69)
+}
+.style9:hover {
+    -webkit-transition-duration: 0.25s;
+            transition-duration: 0.25s;
+    background-color: rgba(0, 0, 0, 0.85);
+    -webkit-transition-timing-function: cubic-bezier(0.29, 0.97, 0.6, 0.97);
+            transition-timing-function: cubic-bezier(0.29, 0.97, 0.6, 0.97)
+}
+.style10 {
+    background-color: #fd7e14;
+    border-width: 1px
+}
+.style11 {
+    margin-left: 0px;
+    padding: 7px 18px
+}
+.style12 {
+    margin-left: 12px
+}
+.style13 {
+    margin-left: 407px
+}
+.style14 {
+    margin-left: 24px;
+    padding-bottom: 11px;
+    padding-left: 16px;
+    width: 50px;
+    height: 80px
+}
+.style15 {
+    border-width: 0px;
+    margin-top: 0px
+}
+.style15:hover {
+    text-decoration: underline
+}
+.style16 {
+}
+.style16:hover {
+    text-decoration: underline
+}
+.:hover {
+    margin-top: 0px;
+    text-decoration: underline;
+    background-color: #6610f2
+}
+.style17 {
+    margin-right: 7px;
+    padding-right: 50px
+}
+a.navbar-brand { 
+}
+.style18 { 
+}
+.style19 {
+    color: #2469a6
+}
+.style20 {
+    font-family: Verdana, Geneva, sans-serif;
+    letter-spacing: 0em;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    background-color: #1f3de3;
+    font-size: 22px;
+    border-width: 26px 38px 26px 26px;
+    border-left-color: #6f42c1;
+    width: 250px;
+    margin-bottom: 0px
+}
+.style21 {
+    text-align: center;
+    left: 230px
+}
+.style22 {
+    position: relative;
+    left: 240px
+}
+.style23 {
+    left: 220px;
+    height: 75%;
+    max-height: 20%;
+    position: relative
+}
+.style24 {
+    position: relative;
+    left: 370px;
+    border-width: 6px;
+    border-color: #131942
+}
+.style25 {
+    position: relative
+}
+.style26 {
+    margin-bottom: 23px
+}
+.style27 {
+    background-color: #8ac442;
+    margin-bottom: -27px
+}
+.style28 {
+    position: relative;
+    left: 690px;
+    margin-bottom: 4px
+}
+.style29 {
+    -webkit-transition-timing-function: cubic-bezier(0.43, 0.37, 0.29, 0.67);
+            transition-timing-function: cubic-bezier(0.43, 0.37, 0.29, 0.67);
+    -webkit-transition-delay: 20s;
+            transition-delay: 20s;
+            border-width: 6px;
+            border-color: #333;
+            color: #ddd
+}
+.style30 {
+    border-width: 7px;
+    border-color: #333;
+    background-color: #495057
+}

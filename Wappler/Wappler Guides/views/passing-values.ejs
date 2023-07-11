@@ -1,0 +1,28 @@
+<!-- Wappler include head-page="layouts/my-main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="passingvalues" appConnect="local" components="{dmxStateManagement:{},dmxBrowser:{}}" -->
+<dmx-session-manager id="session2"></dmx-session-manager>
+<dmx-session-manager id="session1"></dmx-session-manager>
+<div is="dmx-browser" id="browser1" dmx-on:click="session2.set('jai',session2.data.jai);browser1.goto('/page21');session2.set('second',session2.data.second)"></div>
+<meta name="ac:route" content="/passing-values">
+<main>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col">
+                <div class="form-group mb-3">
+                    <label for="input1" class="form-label">Enter your value</label>
+                    <input type="text" class="form-control" id="input1" name="input1" aria-describedby="input1_help" placeholder="Enter some text">
+                </div>
+                <button id="btn1" class="btn bg-white btn-primary text-dark" dmx-on:click="session1.set('cars',input1.value);browser1.scrollYTo('60,40')">Button</button>
+                <button id="btn3" class="btn bg-white btn-primary text-dark" type="reset" dmx-on:click="browser1.reload()">Reset</button>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col">
+                <h1 class="text-white bg-dark mt-2 mb-3">NAme</h1>
+                <input type="text" class="form-control" id="input2" name="input1" aria-describedby="input1_help" placeholder="Enter some text">
+                <h1 class="mt-4 bg-dark text-light">last-name</h1>
+                <input type="text" class="form-control" id="input3" name="input1" aria-describedby="input1_help" placeholder="Enter some text">
+                <button id="btn2" class="btn w-100 mt-3 bg-secondary text-light" dmx-on:click="session2.set('first',input2.value);browser1.goto('/page21');session2.set('second',input3.value)">Button</button>
+            </div>
+        </div>
+    </div>
+</main>
