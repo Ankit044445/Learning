@@ -86,6 +86,10 @@ dmx.config({
       {
         "type": "text",
         "name": "first"
+      },
+      {
+        "type": "text",
+        "name": "third"
       }
     ]
   },
@@ -94,5 +98,13 @@ dmx.config({
       "meta": null,
       "outputType": "array"
     }
+  },
+  "Newproject": {
+    "sessionStorage": [
+      {
+        "type": "text",
+        "name": "third"
+      }
+    ]
   }
 });

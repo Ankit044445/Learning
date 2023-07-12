@@ -95,9 +95,8 @@ div.swiper-slide {
     text-decoration: underline
 }
 .:hover {
-    margin-top: 0px;
     text-decoration: underline;
-    background-color: #6610f2
+    background-color: #f2460d
 }
 .style17 {
     margin-right: 7px;
@@ -117,7 +116,7 @@ a.navbar-brand {
     text-decoration: underline;
     text-transform: uppercase;
     background-color: #1f3de3;
-    font-size: 22px;
+    font-size: 26px;
     border-width: 26px 38px 26px 26px;
     border-left-color: #6f42c1;
     width: 250px;
@@ -129,10 +128,10 @@ a.navbar-brand {
 }
 .style22 {
     position: relative;
-    left: 240px
+    left: 17px
 }
 .style23 {
-    left: 220px;
+    left: 176px;
     height: 75%;
     max-height: 20%;
     position: relative
@@ -155,7 +154,7 @@ a.navbar-brand {
 }
 .style28 {
     position: relative;
-    left: 690px;
+    left: 468px;
     margin-bottom: 4px
 }
 .style29 {
@@ -171,4 +170,73 @@ a.navbar-brand {
     border-width: 7px;
     border-color: #333;
     background-color: #495057
+}
+.style31 {
+    position: relative;
+    left: 255px
+}
+.style32 {
+    padding-right: 0px;
+    max-height: 103px
+}
+.style33 { 
+}
+.style34 {
+    padding-left: 0px;
+    padding-right: 0px
+}
+.style35 {
+    padding-left: 0px;
+    padding-right: 0px 
+}
+.style36 {
+    border: 4px solid rgba(111, 66, 193, 0.73)
+}
+.wappler-temp { 
+}
+.style37 {
+    color: #f2460d
+}
+.style38 {
+    background-color: #e5cfff
+}
+a.nav-item.nav-link.text-light { 
+}
+.style39 {
+    background-color: #ffc107
+}
+.style40 {
+    background-color: #ffc107
+}
+.style40:hover {
+    background-color: #ffc107
+}
+.style41 {
+}
+.style41:hover {
+    background-color: #f2460d
+}
+.style42 {
+    background-color: #d4bfec;
+    padding: 3px 12px
+}
+.style20:hover {
+    background-color: #3595f6
+}
+.style43 { 
+}
+.style43:hover {
+    color: #3595f6
+}
+.style44 {
+    background-color: #d39494;
+    padding: 2px 4px;
+    color: #fff
+}
+.style45 {
+    position: absolute;
+    top: 4012px;
+    color: #f8f9fa;
+    right: 8px;
+    left: 316px
 }

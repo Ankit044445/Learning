@@ -1,16 +1,30 @@
-<!-- Wappler include head-page="layouts/my-main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="page21" appConnect="local" components="{dmxStateManagement:{}}" -->
+<!-- Wappler include head-page="layouts/my-main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="page21" appConnect="local" components="{dmxStateManagement:{},dmxBrowser:{}}" -->
+<div is="dmx-browser" id="browser1" dmx-on:click="browser1.goto('/New-project')"></div>
+<meta name="ac:route" content="/page21">
+<!-- Wappler include head-page="layouts/my-main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="page21" appconnect="local" components="{dmxStateManagement:{}}" -->
 <dmx-session-manager id="session2"></dmx-session-manager>
 <dmx-session-manager id="session1"></dmx-session-manager>
-<meta name="ac:route" content="/page21">
+
 <main>
     <div class="container">
         <div class="row">
             <div class="col">
-                <h1>Your Value is: {{session1.data.aaa}}</h1>
+                <h1>Your Value is: </h1>
                 <div class="row">
                     <div class="col">
-                        <h2 class="text-center">Your name is:-{{session2.data.first}}</h2>
-                        <h2 class="mt-5 mb-0 text-center">Your Lastname is:-{{session2.data.second}}</h2>
+                        <h2 class="text-center">Your name is:-{{session1.data.third}}</h2>
+                        <h2 class="mt-5 mb-0 text-center bg-success text-light">Your Passed value&nbsp; is:-</h2>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="card-header text-light bg-danger" contenteditable="false">Your Third value is <i class="fa fa-hand-o-down"></i></div>
+                                    <div class="card-body text-muted bg-success">
+                                        <h5 class="card-title text-light w-25 text-center bg-warning">{{session2.data.third}}</h5>
+                                        <a class="btn btn-primary" is="dmx-link" href="#" dmx-on:click="browser1.goto('/New-project')">Go back</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
