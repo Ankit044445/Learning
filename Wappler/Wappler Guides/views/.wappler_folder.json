@@ -154,5 +154,21 @@
   "New-project.ejs": {
     "layoutPage": "main",
     "description": ""
+  },
+  "API&JSON.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "API-and-Json.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Form-and-validation.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
+  },
+  "Dynamic-Master-Detail-Pages.ejs": {
+    "layoutPage": "my-main",
+    "description": ""
   }
 }

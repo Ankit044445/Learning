@@ -188,6 +188,21 @@
       "path": "/New-project",
       "page": "New-project",
       "layout": "main"
+    },
+    {
+      "path": "/API-and-Json",
+      "page": "API-and-Json",
+      "layout": "main"
+    },
+    {
+      "path": "/Form-and-validation",
+      "page": "Form-and-validation",
+      "layout": "my-main"
+    },
+    {
+      "path": "/Dynamic-Master-Detail-Pages",
+      "page": "Dynamic-Master-Detail-Pages",
+      "layout": "my-main"
     }
   ]
 }

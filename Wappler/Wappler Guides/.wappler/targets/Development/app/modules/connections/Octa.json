@@ -1,0 +1,16 @@
+{
+  "name": "Octa",
+  "module": "dbconnector",
+  "action": "connect",
+  "options": {
+    "client": "mysql",
+    "connection": {
+      "host": "localhost",
+      "port": 3306,
+      "user": "root",
+      "password": "home1234",
+      "database": "Table"
+    },
+    "tz": "utc"
+  }
+}

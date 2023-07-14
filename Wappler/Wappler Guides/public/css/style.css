@@ -115,12 +115,15 @@ a.navbar-brand {
     font-weight: bold;
     text-decoration: underline;
     text-transform: uppercase;
-    background-color: #1f3de3;
+    background-color: #dee2e6;
     font-size: 26px;
-    border-width: 26px 38px 26px 26px;
-    border-left-color: #6f42c1;
     width: 250px;
-    margin-bottom: 0px
+    margin-bottom: 0px;
+    border-top-width: 26px;
+    border-bottom-width: 26px;
+    border-right-width: 38px;
+    border-left-color: #6f42c1;
+    color: #000
 }
 .style21 {
     text-align: center;
@@ -221,7 +224,8 @@ a.nav-item.nav-link.text-light {
     padding: 3px 12px
 }
 .style20:hover {
-    background-color: #3595f6
+    background-color: #d6d8da;
+    color: rgba(0, 0, 0, 0.91)
 }
 .style43 { 
 }
@@ -239,4 +243,48 @@ a.nav-item.nav-link.text-light {
     color: #f8f9fa;
     right: 8px;
     left: 316px
+}
+.style46 { 
+}
+.style47 {
+    -webkit-transition-timing-function: cubic-bezier(0.65, 0.53, 0.25, 1);
+            transition-timing-function: cubic-bezier(0.65, 0.53, 0.25, 1);
+            border: 3px double #f93;
+            margin-bottom: -3px;
+            padding-bottom: 2px
+}
+.style48 {
+    color: #333;
+    background-color: #f93;
+    margin-top: 3px;
+    border: 3px solid #09168c
+}
+.style47:hover {
+    border-color: #d63384;
+    border-style: double;
+    background-color: rgba(127, 15, 255, 0.72);
+    color: #000
+}
+.style49 {
+    border-width: medium 1px 1px;
+    border-top: 1px solid #000
+}
+.style50 {
+    border-style: solid;
+    -webkit-transition-delay: 10s;
+            transition-delay: 10s;
+    -webkit-transition-duration: 10s;
+            transition-duration: 10s;
+    -webkit-transition-timing-function: cubic-bezier(0.25, 0.67, 0.34, 0.82);
+            transition-timing-function: cubic-bezier(0.25, 0.67, 0.34, 0.82)
+}
+.style51 {
+    margin-bottom: 0px;
+    padding-bottom: 0px
+}
+.style52 {
+    background-color: #db0c0c;
+    color: #fff
+}
+.style53 { 
 }
