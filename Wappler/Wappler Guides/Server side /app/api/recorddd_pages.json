@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "offset"
+      },
+      {
+        "type": "text",
+        "name": "limit"
+      },
+      {
+        "type": "text",
+        "name": "sort"
+      },
+      {
+        "type": "text",
+        "name": "dir"
+      }
+    ]
+  },
+  "exec": {
+    "steps": {
+      "name": "query",
+      "module": "dbconnector",
+      "action": "paged",
+      "options": {
+        "connection": "Octa",
+        "sql": {
+          "type": "select",
+          "columns": [
+            {
+              "table": "customers",
+              "column": "id"
+            },
+            {
+              "table": "customers",
+              "column": "name"
+            },
+            {
+              "table": "customers",
+              "column": "age"
+            },
+            {
+              "table": "customers",
+              "column": "email"
+            }
+          ],
+          "params": [],
+          "table": {
+            "name": "customers"
+          },
+          "primary": "id",
+          "joins": [],
+          "query": "select `id`, `name`, `age`, `email` from `customers`"
+        }
+      },
+      "output": true,
+      "meta": [
+        {
+          "name": "offset",
+          "type": "number"
+        },
+        {
+          "name": "limit",
+          "type": "number"
+        },
+        {
+          "name": "total",
+          "type": "number"
+        },
+        {
+          "name": "page",
+          "type": "object",
+          "sub": [
+            {
+              "name": "offset",
+              "type": "object",
+              "sub": [
+                {
+                  "name": "first",
+                  "type": "number"
+                },
+                {
+                  "name": "prev",
+                  "type": "number"
+                },
+                {
+                  "name": "next",
+                  "type": "number"
+                },
+                {
+                  "name": "last",
+                  "type": "number"
+                }
+              ]
+            },
+            {
+              "name": "current",
+              "type": "number"
+            },
+            {
+              "name": "total",
+              "type": "number"
+            }
+          ]
+        },
+        {
+          "name": "data",
+          "type": "array",
+          "sub": [
+            {
+              "type": "number",
+              "name": "id"
+            },
+            {
+              "type": "text",
+              "name": "name"
+            },
+            {
+              "type": "number",
+              "name": "age"
+            },
+            {
+              "type": "text",
+              "name": "email"
+            }
+          ]
+        }
+      ],
+      "outputType": "object"
+    }
+  }
+}

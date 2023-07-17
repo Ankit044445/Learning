@@ -1,0 +1,40 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "page": "index",
+      "routeType": "page",
+      "layout": "main"
+    },
+    {
+      "path": "/Database-queries",
+      "page": "Database-queries",
+      "layout": "main"
+    },
+    {
+      "path": "/Database-queries()",
+      "page": "Database-queries()",
+      "layout": "octa"
+    },
+    {
+      "path": "/displaying-dynamic-data",
+      "page": "displaying-dynamic-data",
+      "layout": "octa"
+    },
+    {
+      "path": "/Filtering-data",
+      "page": "Filtering-data",
+      "layout": "octa"
+    },
+    {
+      "path": "/Dynamics-menu",
+      "page": "Dynamics-menu",
+      "layout": "octa"
+    },
+    {
+      "path": "/Dynamic-Paging",
+      "page": "Dynamic-Paging",
+      "layout": "octa"
+    }
+  ]
+}

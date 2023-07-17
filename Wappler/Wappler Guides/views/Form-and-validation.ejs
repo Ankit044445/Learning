@@ -1,8 +1,9 @@
 <!-- Wappler include head-page="layouts/my-main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="Formandvalidation" appconnect="local" class="style51" components="{dmxValidator:{},dmxAnimateCSS:{},dmxNotifications:{},dmxFormatter:{},dmxTyped:{},dmxBrowser:{},dmxPreloader:{},dmxBootstrap5Tooltips:{},dmxBootstrap5Popovers:{}}" -->
+<dmx-value id="steps" dmx-bind:value="1"></dmx-value>
 <dmx-toggle id="toggle1"></dmx-toggle>
 
 <dmx-preloader id="preloader1" spinner="wave" color="#FF0099" bgcolor="#351C75"></dmx-preloader>
-<dmx-notifications id="notifies2" position="bottom" dmx-show="(register1.inp_company.value !=='')&amp;&amp;(register1.inp_email.value !=='')&amp;&amp;(register1.inp_password.value !=='')&amp;&amp;(register1.inp_password2.value !=='')&amp;&amp;(register1.bs5checkbox.value !='')" show-animation="rollIn"></dmx-notifications>
+<dmx-notifications id="notifies2" position="bottom" dmx-show="toggle1.checked&amp;&amp;(register1.inp_company.value !=='')&amp;&amp;(register1.inp_email.value !=='')&amp;&amp;(register1.inp_password.value !=='')&amp;&amp;(register1.inp_password2.value !=='')&amp;&amp;(!register1.bs5checkbox.checked)" show-animation="rollIn"></dmx-notifications>
 <dmx-notifications id="notifies3" show-animation="fadeInLeft"></dmx-notifications>
 <!-- Wappler include head-page="layouts/my-main" bootstrap5="local" fontawesome_4="local" jquery_slim_33="cdn" is="dmx-app" id="Formandvalidation" appconnect="local" class="style51" components="{dmxValidator:{},dmxAnimateCSS:{},dmxNotifications:{},dmxFormatter:{},dmxTyped:{}}" -->
 <dmx-notifications id="notifies1" dmx-show="(register1.inp_company.value =='')+(register1.inp_email.value =='')+(register1.inp_password.value == '')+(register1.bs5checkbox.value =='')" danger-icon="fa fa-warning bg-primary" position="bottom" show-animation="swing" opacity="" newest-on-top="true" closable="true" class="style53"></dmx-notifications>
@@ -57,7 +58,7 @@
 </main>
 <hr>
 <div class="container mt-4" dmx-animate-enter.delay:2="zoomInDown">
-    <table class="table table-dark table-bordered border-success bg-dark" id="myTable" dmx-show="toggle1.checked&amp;&amp;(register1.inp_company.value !='')&amp;&amp;(register1.inp_password.value !='')&amp;&amp;(register1.inp_email.value !='')&amp;&amp;(register1.inp_password2.value !='')&amp;&amp;(register1.bs5checkbox.value !='')" dmx-hide="toggle1.checked&amp;&amp;(register1.inp_company.value =='')||(register1.inp_password.value =='')||(register1.inp_email.value =='')||(register1.inp_password2.value =='')||(register1.bs5checkbox.value =='')" dmx-animate-enter="fadeInUp" dmx-animate-leave="zoomOutRight">
+    <table class="table table-dark table-bordered border-success bg-dark" id="myTable" dmx-show="(toggle1.checked)&amp;&amp;(register1.inp_company.value !='')&amp;&amp;(register1.inp_password.value !='')&amp;&amp;(register1.inp_email.value !='')&amp;&amp;(register1.inp_password2.value !='')&amp;&amp;(register1.bs5checkbox.value!== '')" dmx-animate-enter="fadeInUp" dmx-animate-leave="zoomOutRight">
         <thead class="table-danger">
             <tr>
                 <th>Company name</th>
@@ -73,4 +74,47 @@
             </tr>
         </tbody>
     </table>
+    <h1 class="bg-success text-light text-center text-uppercase fw-light lh-sm shadow">Multi Steps Forms</h1>
+    <div class="container mt-3">
+        <form id="form1">
+            <p>Step {{steps.value}}of 3</p>
+            <div class="row" dmx-show="steps.value==1">
+                <div class="col">
+                    <div class="form-group mb-3">
+                        <label for="input1" class="form-label">Some text</label>
+                        <input type="text" class="form-control" id="input1" name="input1" aria-describedby="input1_help" placeholder="Enter some text">
+                    </div>
+                    <button id="btn1" class="btn btn-info" dmx-on:click="steps.setValue(steps.value+1)" dmx-bind:disabled="!input1.value">NEXT</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col">
+                <form id="form2">
+                    <div class="form-group mb-3">
+                        <label for="input2" class="form-label">Some text</label>
+                        <input type="text" class="form-control" id="input2" name="input2" aria-describedby="input2_help" placeholder="Enter some text">
+                        <button id="btn3" class="btn btn-success" dmx-on:click="steps.setValue(steps.value-1)">Previous</button>
+                        <button id="btn56" class="btn btn-info" dmx-on:click="steps.setValue(steps.value+1)" dmx-bind:disabled="!input2.value">NEXT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <form id="form3">
+                    <div class="form-group mb-3">
+                        <label for="input3" class="form-label">Some text</label>
+                        <input type="text" class="form-control" id="input3" name="input3" aria-describedby="input3_help" placeholder="Enter some text">
+                        <button id="btn34" class="btn btn-success" dmx-on:click="steps.setValue(steps.value-1)">Previous</button>
+                        <button id="btn4" class="btn">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+    </div>
 </div>

@@ -1,0 +1,9 @@
+<!-- Wappler include head-page="layouts/octa" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="Dynamicsmenu" appConnect="local" -->
+<meta name="ac:route" content="/Dynamics-menu">
+<div class="container">
+    <form id="form1">
+        <select id="select1" class="form-select mt-4" dmx-bind:options="serverconnect1.data.query" optiontext="name+age+email" optionvalue="id">
+        </select>
+    </form>
+</div>
+<dmx-serverconnect id="serverconnect1" url="/api/myrecords"></dmx-serverconnect>

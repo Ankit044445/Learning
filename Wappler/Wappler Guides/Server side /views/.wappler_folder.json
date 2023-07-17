@@ -1,0 +1,38 @@
+{
+  "Database-queries.ejs": {
+    "layoutPage": "main",
+    "description": ""
+  },
+  "Database-queries().ejs": {
+    "layoutPage": "octa",
+    "description": ""
+  },
+  "displaying-dynamic-data.ejs": {
+    "layoutPage": "octa",
+    "description": ""
+  },
+  "Filtering-Database-Query-with-a-Text-Input.ejs": {
+    "layoutPage": "octa",
+    "description": ""
+  },
+  "Filtering-data.ejs": {
+    "layoutPage": "octa",
+    "description": ""
+  },
+  "Dynamic-Select_menu.ejs": {
+    "layoutPage": "octa",
+    "description": ""
+  },
+  "Dynamics-menu.ejs": {
+    "layoutPage": "octa",
+    "description": ""
+  },
+  "Dynamic-Paging.ejs": {
+    "layoutPage": "octa",
+    "description": ""
+  },
+  "hdbiZPd.ejs": {
+    "layoutPage": "octa",
+    "description": ""
+  }
+}

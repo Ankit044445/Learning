@@ -1,0 +1,55 @@
+<!-- Wappler include head-page="layouts/octa" fontawesome_5="cdn" bootstrap5="local" is="dmx-app" id="DynamicPaging" appConnect="local" components="{dmxStateManagement:{},dmxBootstrap5PagingGenerator:{},dmxBootstrap5Navigation:{}}" -->
+<dmx-query-manager id="query1"></dmx-query-manager>
+<dmx-serverconnect id="serverconnect1" url="/api/recorddd_pages" dmx-param:offset="query1.data.offset"></dmx-serverconnect>
+<div class="container">
+  <table class="table table-warning">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col" class="text-info">#</th>
+        <th scope="col" class="text-info">First</th>
+        <th scope="col" class="text-info">Last</th>
+        <th scope="col" class="text-info">Handle</th>
+      </tr>
+    </thead>
+    <tbody is="dmx-repeat" id="repeat1" dmx-bind:repeat="serverconnect1.data.query.data" class="table-dark text-light">
+      <tr>
+        <th scope="row">{{serverconnect1.data.query.data[0].id}}</th>
+        <td>{{serverconnect1.data.query.data[0].name}}</td>
+        <td>{{serverconnect1.data.query.data[0].age}}</td>
+        <td>{{serverconnect1.data.query.data[0].email}}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{serverconnect1.data.query.data[1].id}}</th>
+        <td>{{serverconnect1.data.query.data[1].name}}</td>
+        <td>{{serverconnect1.data.query.data[1].age}}</td>
+        <td>{{serverconnect1.data.query.data[1].email}}</td>
+      </tr>
+      <tr>
+        <th scope="row">{{serverconnect1.data.query.data[2].id}}</th>
+        <td>{{serverconnect1.data.query.data[2].name}}</td>
+        <td>{{serverconnect1.data.query.data[2].age}}</td>
+        <td>{{serverconnect1.data.query.data[2].email}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <ul class="pagination" dmx-populate="query1.data" dmx-state="query1" dmx-offset="offset" dmx-generator="bs5paging">
+    <li class="page-item" dmx-class:disabled="query1.data.page.current == 1" aria-label="First">
+      <a href="javascript:void(0)" class="page-link" dmx-on:click="query1.set('offset',query1.data.page.offset.first)"><span aria-hidden="true">&lsaquo;&lsaquo;</span></a>
+    </li>
+    <li class="page-item" dmx-class:disabled="query1.data.page.current == 1" aria-label="Previous">
+      <a href="javascript:void(0)" class="page-link" dmx-on:click="query1.set('offset',query1.data.page.offset.prev)"><span aria-hidden="true">&lsaquo;</span></a>
+    </li>
+    <li class="page-item" dmx-class:active="title == query1.data.page.current" dmx-class:disabled="!active" dmx-repeat="query1.data.getServerConnectPagination(2,1,'...')">
+      <a href="javascript:void(0)" class="page-link" dmx-on:click="query1.set('offset',(page-1)*query1.data.limit)">{{title}}</a>
+    </li>
+    <li class="page-item" dmx-class:disabled="query1.data.page.current ==  query1.data.page.total" aria-label="Next">
+      <a href="javascript:void(0)" class="page-link" dmx-on:click="query1.set('offset',query1.data.page.offset.next)"><span aria-hidden="true">&rsaquo;</span></a>
+    </li>
+    <li class="page-item" dmx-class:disabled="query1.data.page.current ==  query1.data.page.total" aria-label="Last">
+      <a href="javascript:void(0)" class="page-link" dmx-on:click="query1.set('offset',query1.data.page.offset.last)"><span aria-hidden="true">&rsaquo;&rsaquo;</span></a>
+    </li>
+  </ul>
+
+</div>
+
+<meta name="ac:route" content="/Dynamic-Paging">
