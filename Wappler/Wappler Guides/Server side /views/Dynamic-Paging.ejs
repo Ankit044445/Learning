@@ -32,10 +32,7 @@
       </tr>
     </tbody>
   </table>
-  <ul class="pagination" dmx-populate="query1.data" dmx-state="query1" dmx-offset="offset" dmx-generator="bs5paging">
-    <li class="page-item" dmx-class:disabled="query1.data.page.current == 1" aria-label="First">
-      <a href="javascript:void(0)" class="page-link" dmx-on:click="query1.set('offset',query1.data.page.offset.first)"><span aria-hidden="true">&lsaquo;&lsaquo;</span></a>
-    </li>
+  <ul class="pagination pagination-lg" dmx-populate="query1.data" dmx-state="query1" dmx-offset="offset" dmx-generator="bs5paging">
     <li class="page-item" dmx-class:disabled="query1.data.page.current == 1" aria-label="Previous">
       <a href="javascript:void(0)" class="page-link" dmx-on:click="query1.set('offset',query1.data.page.offset.prev)"><span aria-hidden="true">&lsaquo;</span></a>
     </li>
@@ -44,9 +41,6 @@
     </li>
     <li class="page-item" dmx-class:disabled="query1.data.page.current ==  query1.data.page.total" aria-label="Next">
       <a href="javascript:void(0)" class="page-link" dmx-on:click="query1.set('offset',query1.data.page.offset.next)"><span aria-hidden="true">&rsaquo;</span></a>
-    </li>
-    <li class="page-item" dmx-class:disabled="query1.data.page.current ==  query1.data.page.total" aria-label="Last">
-      <a href="javascript:void(0)" class="page-link" dmx-on:click="query1.set('offset',query1.data.page.offset.last)"><span aria-hidden="true">&rsaquo;&rsaquo;</span></a>
     </li>
   </ul>
 

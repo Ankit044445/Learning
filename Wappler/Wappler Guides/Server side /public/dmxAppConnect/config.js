@@ -26,6 +26,18 @@ dmx.config({
     "repeat1": {
       "meta": [
         {
+          "name": "$index",
+          "type": "number"
+        },
+        {
+          "name": "$key",
+          "type": "text"
+        },
+        {
+          "name": "$value",
+          "type": "object"
+        },
+        {
           "type": "number",
           "name": "id"
         },
@@ -170,6 +182,18 @@ dmx.config({
       {
         "type": "text",
         "name": "offset"
+      }
+    ]
+  },
+  "Dynamic_Sortable_Table": {
+    "query": [
+      {
+        "type": "text",
+        "name": "sort"
+      },
+      {
+        "type": "text",
+        "name": "dir"
       }
     ]
   }

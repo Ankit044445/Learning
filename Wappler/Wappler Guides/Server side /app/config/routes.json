@@ -17,23 +17,23 @@
       "layout": "octa"
     },
     {
-      "path": "/displaying-dynamic-data",
-      "page": "displaying-dynamic-data",
-      "layout": "octa"
-    },
-    {
       "path": "/Filtering-data",
       "page": "Filtering-data",
       "layout": "octa"
     },
     {
-      "path": "/Dynamics-menu",
-      "page": "Dynamics-menu",
+      "path": "/Dynamic-Paging",
+      "page": "Dynamic-Paging",
       "layout": "octa"
     },
     {
-      "path": "/Dynamic-Paging",
-      "page": "Dynamic-Paging",
+      "path": "/Dynamic-menu",
+      "page": "Dynamic-menu",
+      "layout": "octa"
+    },
+    {
+      "path": "/Dynamic_Sortable_Table",
+      "page": "Dynamic_Sortable_Table",
       "layout": "octa"
     }
   ]
