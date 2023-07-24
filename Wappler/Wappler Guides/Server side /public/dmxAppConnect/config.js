@@ -194,6 +194,10 @@ dmx.config({
       {
         "type": "text",
         "name": "dir"
+      },
+      {
+        "type": "text",
+        "name": "id"
       }
     ]
   }

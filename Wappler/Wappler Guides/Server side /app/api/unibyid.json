@@ -1,0 +1,115 @@
+{
+  "meta": {
+    "$_GET": [
+      {
+        "type": "text",
+        "name": "id"
+      },
+      {
+        "type": "text",
+        "name": "sort"
+      },
+      {
+        "type": "text",
+        "name": "dir"
+      }
+    ]
+  },
+  "exec": {
+    "steps": [
+      {
+        "name": "query",
+        "module": "dbconnector",
+        "action": "select",
+        "options": {
+          "connection": "Octa",
+          "sql": {
+            "type": "select",
+            "columns": [
+              {
+                "table": "customers",
+                "column": "id"
+              },
+              {
+                "table": "customers",
+                "column": "name"
+              },
+              {
+                "table": "customers",
+                "column": "age"
+              },
+              {
+                "table": "customers",
+                "column": "email"
+              }
+            ],
+            "params": [
+              {
+                "operator": "equal",
+                "type": "expression",
+                "name": ":P1",
+                "value": "{{$_GET.id.default(1)}}",
+                "test": ""
+              }
+            ],
+            "table": {
+              "name": "customers"
+            },
+            "primary": "id",
+            "joins": [],
+            "wheres": {
+              "condition": "AND",
+              "rules": [
+                {
+                  "id": "customers.id",
+                  "field": "customers.id",
+                  "type": "double",
+                  "operator": "equal",
+                  "value": "{{$_GET.id.default(1)}}",
+                  "data": {
+                    "table": "customers",
+                    "column": "id",
+                    "type": "number",
+                    "columnObj": {
+                      "type": "increments",
+                      "primary": true,
+                      "nullable": false,
+                      "name": "id"
+                    }
+                  },
+                  "operation": "="
+                }
+              ],
+              "conditional": null,
+              "valid": true
+            },
+            "query": "select `id`, `name`, `age`, `email` from `customers` where `customers`.`id` = ?"
+          }
+        },
+        "output": true,
+        "meta": [
+          {
+            "type": "number",
+            "name": "id"
+          },
+          {
+            "type": "text",
+            "name": "name"
+          },
+          {
+            "type": "number",
+            "name": "age"
+          },
+          {
+            "type": "text",
+            "name": "email"
+          }
+        ],
+        "outputType": "array"
+      },
+      {
+        "options": {}
+      }
+    ]
+  }
+}

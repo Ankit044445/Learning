@@ -17,6 +17,41 @@
           "collation": "utf8mb4_general_ci",
           "comment": "hi",
           "system_versioned": false
+        },
+        "columns": {
+          "Company": {
+            "db": {
+              "type": "string",
+              "maxLength": 25,
+              "primary": true,
+              "nullable": false
+            }
+          },
+          "Email": {
+            "db": {
+              "type": "string",
+              "default": "",
+              "maxLength": 20,
+              "primary": false,
+              "nullable": true
+            }
+          },
+          "Age": {
+            "db": {
+              "type": "integer",
+              "default": "",
+              "primary": false,
+              "nullable": true
+            }
+          }
+        }
+      },
+      "NAMES": {
+        "db": {
+          "engine": "InnoDB",
+          "schema": "tables",
+          "collation": "utf8mb4_general_ci",
+          "system_versioned": false
         }
       },
       "customers": {
@@ -57,14 +92,6 @@
               "nullable": false
             }
           }
-        }
-      },
-      "NAMES": {
-        "db": {
-          "engine": "InnoDB",
-          "schema": "tables",
-          "collation": "utf8mb4_general_ci",
-          "system_versioned": false
         }
       }
     },
