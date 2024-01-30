@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Function</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="input-group input-group-sm mb-3 mt-2">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text bg-success text-white" id="inputGroup-sizing-sm">Enter Number</span>
+                    </div>
+                    <input id="flowerInput" type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+                </div>
+                <button class="btn btn-danger mt-1" onclick="submitForm()">Submit</button>
+            </div>
+        </div>
+    </div>
+    <p class="mt-1 text-primary">Your color is <span id="op"></span></p>
+
+    <script>
+        var test = {
+            marks: "20",
+            Result: "fail"
+        }
+
+        function submitForm() {
+            test.days = document.getElementById("flowerInput").value;
+            document.getElementById("op").innerHTML = test.days;
+        }
+    </script>
+</body>
+</html>
