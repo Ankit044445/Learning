@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For loop</title>
+  </head>
+  <body>
+    <div class="container mt-2">
+      <div class="row">
+        <div class="col text-center">
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-6">
+                      <label for="text1" class="form-label"
+                        >Enter First Number:</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="text1"
+                        required
+                      />
+                      <small class="text-danger d-none" id="msg1"
+                        >Please enter valid number and greater than 0</small
+                      >
+                    </div>
+                    <div class="col-6">
+                      <label for="text2" class="form-label"
+                        >Enter Second Number:</label
+                      >
+                      <input
+                        type="number"
+                        class="form-control"
+                        id="text2"
+                        required
+                      />
+                      <small class="text-danger d-none" id="msg2"
+                        >Please enter valid number and greater than 0</small
+                      >
+                    </div>
+                  </div>
+
+                  <button class="btn btn-primary mt-4" id="sub">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card d-none " id="card">
+            <div class="card-body">
+              <div id="alert-container" class="mt-2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+        var sub = document.getElementById("sub");
+        var text1 = document.getElementById("text1");
+        var text2 = document.getElementById("text2");
+        var msg1 = document.getElementById("msg1");
+        var msg2 = document.getElementById("msg2");
+      
+        function validateInput(input, messageElement) {
+          var value = parseInt(input.value);
+          if (value > 0) {
+            input.classList.add("is-valid");
+            input.classList.remove("is-invalid");
+            messageElement.classList.add("d-none");
+            messageElement.classList.remove("d-block");
+          } else {
+            input.classList.remove("is-valid");
+            input.classList.add("is-invalid");
+            messageElement.classList.remove("d-none");
+            messageElement.classList.add("d-block");
+          }
+        }
+      
+        text1.addEventListener("input", function() {
+          validateInput(text1, msg1);
+        });
+      
+        text2.addEventListener("input", function() {
+          validateInput(text2, msg2);
+        });
+      
+        sub.addEventListener("click", function () {
+          var a = parseInt(text1.value);
+          var b = parseInt(text2.value);
+          var result = "";
+      
+          if (a > 0 && b > 0) {
+            for (var i = a; i <= b; i++) {
+              result += `<div class="alert alert-primary" role="alert">hi ${i}</div>`;
+            }
+            document.getElementById("card").classList.remove("d-none");
+            document.getElementById("card").classList.add("d-block");
+            document.getElementById("alert-container").innerHTML = result;
+          } else {
+            if (a <= 0) {
+              validateInput(text1, msg1);
+            }
+            if (b <= 0) {
+              validateInput(text2, msg2);
+            }
+          }
+        });
+      </script>
+      
+      
+      
+      
+  </body>
+</html>

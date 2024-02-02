@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break and continue loop</title>
+</head>
+<body>
+
+    <h2>Continue</h2>
+    <input type="number" id="we" >
+    <button onclick="abort()">Check</button>
+<script>
+    function abort(){
+
+    var w =parseInt(document.getElementById("we").value);
+    if(w>0 && w<= 10){
+    if(w>0 && w<10){
+    
+    for (var a =1 ; a<=10;a++){
+if(a == w){
+
+    // continue;
+     continue;
+}
+
+document.write( a+"-" +"Continue" +"<br>")
+
+    }
+}
+}
+else if (w>0){
+   var r = prompt("enter your correct number ")
+
+ for(b=1; b<=10; b++){
+    if(b ==r ){
+        continue;
+
+
+
+    }
+    document.write( b+"-" +"Continue" +"<br>")
+
+
+ }
+    
+
+    
+}
+else{
+
+    alert("Please enter number greater than 0")
+}
+}
+</script>
+   
+    
+</body>
+</htmlC

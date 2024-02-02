@@ -61,6 +61,24 @@
         </div>
     </div>
 </div>
+<div class="container wappler-block pt-5 pb-5">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header text-center fw-bold lead text-light bg-primary"> Add</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6"> <label>Add number 1 </label> <input id="text1" name="text1" type="number" class="form-control" required="" data-rule-number=""> </div>
+                        <div class="col-6"> <label>Add number 2 </label><input id="text2" name="text1" type="number" class="form-control" required="" data-rule-number=""> </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 text-center"> <button class="btn btn-primary bg-danger border-0" dmx-on:click="var1.setValue((text1.value.toNumber() + text2.value.toNumber()))">Sum</button> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
